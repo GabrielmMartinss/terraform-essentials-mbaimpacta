@@ -3,7 +3,7 @@ resource "google_compute_instance" "firstvm" {
   name         = "website"
   machine_type = "n1-standard-1"
   zone         = var.gcp_zone
-  # Insira essa linha após zone 
+  # Insira essa linha após zone
   tags = ["website", "impacta"]
 
   # Defini a Imagem da VM
@@ -22,4 +22,3 @@ resource "google_compute_instance" "firstvm" {
     }
   }
 }
-
